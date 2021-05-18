@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Process Collaboration App</title>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<h1><i class="fas fa-compress-arrows-alt"></i> Process Collaboration</h1>
+			</header>
+			<main class="join-main">
+				<form action="material.html">
+				<!-- <form name="form"> -->
+					
+					<div class="form-control">
+						<label for="username">Username</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+						<div>
+							<input  class="btn" id="room_material" value="Material"   type="submit" onclick="javascript: form.action='/material.html';">
+ 				    
+						</div>
+					<input class="btn"  id="room_bom" value="BOM" type="submit" onclick="javascript: form.action='/bom.html';">
+					</div>
+					<!-- <div class="form-control">
+						<label for="room">Room</label>
+						<select name="room" id="room" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+							<option value="">Select...</option>
+							<option name ="material"   value="material.html">Material</option>
+							<option name ="bom" value="bom.html">Bill of Material</option>
+						  </select>
+						<select name="room" id="room">
+							<option value="Material">Material</option>
+							<option value="bom">Bill Of Material</option>
+						</select> -->
+					</div>
+					<!-- <button type="submit" class="btn">Join Process</button> -->
+				</form>
+			</main>
+		</div>
+
+		<!-- <script>
+
+// https://stackoverflow.com/questions/27765666/passing-variable-through-javascript-from-one-html-page-to-another-page
+window.onchange = function() {
+   var user = document.getElementById('username').value;
+   var room = document.getElementById('room').value;
+var getData = 
+{
+   user: user,
+   room: room
+}
+
+localStorage.setItem('dataKey', JSON.stringify(getData))
+
+}
+		</script> -->
+	</body>
+</html>

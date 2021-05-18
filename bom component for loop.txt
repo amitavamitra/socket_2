@@ -1,0 +1,74 @@
+for ( var i = 0 ; i < material_bc.length; i ++){
+    var comp = material_bc[i][0];
+    var desc = material_bc[i][1];
+  
+  for (var c = 0; c < arrHead.length; c++) {
+      var td = document.createElement('td'); // table definition.
+      td = tr.insertCell(c);
+
+
+     
+
+      if (c == 0) {      // the first column.
+          // add a button in every new row in the first column.
+          var button = document.createElement('input');
+          // set input attributes.
+          button.setAttribute('type', 'button');
+          button.setAttribute('value', 'remove');
+          // button.
+          // add button's 'onclick' event.
+          button.setAttribute('onclick', 'removeRow(this)');
+          td.appendChild(button);
+      }
+      if (c == 1) {      // the second column.
+
+          // add materials as dropdown options
+          var ele = document.createElement('input');
+          ele.setAttribute('type', 'text');
+          ele.setAttribute('value', material_bc[i][0]);
+          td.appendChild(ele);
+           
+      }
+    
+      if (c == 2) { // the third column.
+           // add materials as dropdown options
+           var ele = document.createElement('input');
+           ele.setAttribute('type', 'text');
+           //  run a for loop at material_bc ? for description ?
+              //  for ( var i = 0 ; i < material_bc.length; i ++){
+                 
+                 
+                 ele.setAttribute('value', material_bc[i][1]);
+                 td.appendChild(ele);
+              //  }
+           
+           }
+
+           if (c == 3) { // the third column.
+           // add materials as dropdown options
+           var ele = document.createElement('input');
+           ele.setAttribute('type', 'text');
+           ele.setAttribute('value',material_bc[i][2] );
+           td.appendChild(ele);
+           
+           }
+
+           if (c == 4) { // the second column.
+             // add materials as dropdown options
+             var ele = document.createElement('input');
+             ele.setAttribute('type', 'text');
+             ele.setAttribute('value', material_bc[i][3]);
+             td.appendChild(ele);
+              }
+
+     // else {
+     //      //  3rd and 4th column, will have textbox.
+     //      var ele = document.createElement('input');
+     //      ele.setAttribute('type', 'text');
+     //      ele.setAttribute('value', 'Amitava');
+     //      td.appendChild(ele);
+     //  }
+  }
+  
+}
+}

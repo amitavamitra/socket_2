@@ -1,0 +1,9 @@
+pass the username and room from index.html to material.html and  bom.html - done
+broadcast material to bom for components.- done.
+populate the component table with 2. https://www.youtube.com/watch?v=Wcr_bbMm3J0&t=318s
+save on emits ?  mongodb 
+pull from mongodb when a new user join to get past comments..
+dup-check material 
+dup-check components
+when all agree and freeze save to S4 via CRUD pipelines
+https://gabrieltanner.org/blog/webrtc-video-broadcast
